@@ -8,6 +8,6 @@
     isIsogram("aba") == false
     isIsogram("moOse") == false // -- ignore letter case
 */
-const isIsograms = function (str) {
+function isIsograms(str) {
   return !/(\w).\1/i.test(str);
 };

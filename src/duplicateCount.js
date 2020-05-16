@@ -13,6 +13,6 @@
     "aA11" -> 2 # 'a' and '1'
     "ABBA" -> 2 # 'A' and 'B' each occur twice
 */
-const duplicateCount = function (text) {
+function duplicateCount(text) {
   return new Set([...text.toLowerCase().match(/(.)(?=.*\1)/gi)] || []).length
 };

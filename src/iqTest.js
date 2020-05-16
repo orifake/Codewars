@@ -12,7 +12,7 @@
     iqTest("1 2 1 1") => 2 // Second number is even, while the rest of the numbers are odd
 */
 
-const iqTest = function (numbers) {
+function iqTest(numbers) {
   const nums = numbers.split(' ')
   const proceededNums = nums.map((num) => {
     return num % 2

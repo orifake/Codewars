@@ -16,7 +16,7 @@
     part2:    o   e   a r s   = oears
 */
 
-const isMerge = function (s, part1, part2) {
+function isMerge(s, part1, part2) {
   if (s.length !== part1.length + part2.length) {
     return false;
   }

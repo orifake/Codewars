@@ -8,7 +8,7 @@
   domainName("http://www.zombie-bites.com") == "zombie-bites"
   domainName("https://www.cnet.com") == "cnet"
 */
-const domainName = function (url) {
+function domainName(url) {
   return url.match(/(?:http(?:s)?:\/\/)?(?:w{3}\.)?([^\.]+)/i)[1]
 };
 

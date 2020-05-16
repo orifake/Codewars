@@ -10,6 +10,6 @@
   Allowed characters are uppercase / lowercase latin letters and digits from 0 to 9
   No whitespaces / underscore
 */
-const alphanumeric = function (string) {
+function alphanumeric(string) {
   return /^[0-9a-z]+$/i.test(string)
 };

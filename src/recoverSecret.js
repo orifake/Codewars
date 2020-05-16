@@ -11,7 +11,7 @@
   You can assume nothing about the triplets given to you other than that they are valid triplets and that they contain sufficient information to deduce the original string. In particular, this means that the secret string will never contain letters that do not occur in one of the triplets given to you.
 */
 
-const recoverSecret = function (triplets) {
+function recoverSecret(triplets) {
   let nodes = []
   let graph = {}
   let sortedList = []

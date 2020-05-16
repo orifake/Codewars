@@ -14,7 +14,7 @@
     rgb(148, 0, 211) // returns 9400D3
 */
 
-const rgb = function (r, g, b) {
+function rgb(r, g, b) {
   function fix(num) {
     return num < 0 ? 0 : (num > 255 ? 255 : num)
   }
@@ -26,5 +26,5 @@ const rgb = function (r, g, b) {
     return pad(fix(num).toString(16))
   }
 
-  return (RGB2Hex(r)+RGB2Hex(g)+RGB2Hex(b)).toUpperCase()
+  return (RGB2Hex(r) + RGB2Hex(g) + RGB2Hex(b)).toUpperCase()
 }

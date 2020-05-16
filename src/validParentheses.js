@@ -11,7 +11,7 @@
     "(())((()())())"  =>  true
 */
 
-const validParentheses = function (parens) {
+function validParentheses(parens) {
   let openingBrackets = ['{', '[', '(']
   let closingBrackets = ['}', ']', ')']
 
